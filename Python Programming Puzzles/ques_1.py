@@ -14,3 +14,5 @@ Output:
 True'''
 # Method - 1
 list_1 = eval(input("Enter the List using [] :- "))
+count_19 = list_1.count(19)
+count_19 = list_1.count(5)
