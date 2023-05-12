@@ -15,4 +15,8 @@ True'''
 # Method - 1
 list_1 = eval(input("Enter the List using [] :- "))
 count_19 = list_1.count(19)
-count_19 = list_1.count(5)
+count_5 = list_1.count(5)
+if count_19 == 2 and count_5 == 3:
+    print("True")
+else:
+    print("False")
