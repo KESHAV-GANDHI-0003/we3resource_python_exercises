@@ -1,4 +1,5 @@
-""" 24. Write a Python program to create a list whose ith element is the maximum of the first i elements from an input list.
+""" 24. Write a Python program to create a list whose ith element is the maximum of the first i elements
+ from an input list.
 Input:
 [0, -1, 3, 8, 5, 9, 8, 14, 2, 4, 3, -10, 10, 17, 41, 22, -4, -4, -15, 0]
 Output:
@@ -11,3 +12,13 @@ Input:
 [1, 19, 5, 15, 5, 25, 5]
 Output:
 [1, 19, 19, 19, 19, 25, 25] """
+def listfnt(list_):
+    output = []
+    max = list_[0]
+    for i in list_:
+        if i > max:
+            max = i
+        output.append(max)
+    return output
+list_ = eval(input("Enter the list using [] :- "))
+print(listfnt(list_))
